@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE html>111
 <html <?php language_attributes(); ?>>
 <head>
   <meta charset="<?php bloginfo('charset'); ?>">
