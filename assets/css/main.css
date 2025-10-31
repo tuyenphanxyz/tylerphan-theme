@@ -1,0 +1,10 @@
+body{margin:0;font-family:Inter,sans-serif;color:#111;background:#fff}
+.container{width:90%;max-width:960px;margin:auto;padding:2rem 0}
+.site-header{border-bottom:1px solid #eee;padding:1rem 0}
+.site-title a{text-decoration:none;color:#111;font-weight:700;font-size:1.4rem}
+.nav-links{list-style:none;display:flex;gap:1.5rem;padding:0;margin:1rem 0 0 0}
+.nav-links a{color:#006CCF;text-decoration:none}
+.nav-links a:hover{text-decoration:underline}
+.post-item{margin-bottom:2rem}
+.post-item h2{font-size:1.5rem;color:#111}
+.site-footer{text-align:center;padding:1.5rem 0;border-top:1px solid #eee;font-size:.9rem;color:#555}
