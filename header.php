@@ -1,4 +1,4 @@
-<!DOCTYPE html>11222 thanh cong roi 23
+<!DOCTYPE html>commit
 <html <?php language_attributes(); ?>>
 <head>
   <meta charset="<?php bloginfo('charset'); ?>">
