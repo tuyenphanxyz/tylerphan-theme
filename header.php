@@ -1,4 +1,4 @@
-<!DOCTYPE html>11222 thanh cong roi
+<!DOCTYPE html>11222 thanh cong roi 1
 <html <?php language_attributes(); ?>>
 <head>
   <meta charset="<?php bloginfo('charset'); ?>">
