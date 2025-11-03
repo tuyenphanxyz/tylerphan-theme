@@ -1,0 +1,17 @@
+/*
+Theme Name: TylerPhan Theme
+Theme URI: https://tylerphan.blog
+Author: Tyler Phan
+Author URI: https://tylerphan.blog
+Description: Blank starter theme for custom WordPress development.
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: https://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: tylerphan-theme
+Tags: custom-theme, minimal, blank
+*/
+
+
+
+/* Custom theme styles */
+body{margin:0;font-family:Inter,sans-serif;color:#111;background:#fff}
