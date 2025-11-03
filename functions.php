@@ -19,4 +19,21 @@ function tylerphan_enqueue_scripts() {
   wp_enqueue_script('tylerphan-js', get_template_directory_uri() . '/assets/js/main.js', array('bootstrap-bundle'), '1.0', true);
 }
 add_action('wp_enqueue_scripts', 'tylerphan_enqueue_scripts');
+
+// Add Bootstrap classes to WP menu for the main navbar
+function tylerphan_bootstrap_nav_classes($atts, $item, $args) {
+  if (isset($args->theme_location) && $args->theme_location === 'main-menu') {
+    $atts['class'] = isset($atts['class']) ? $atts['class'] . ' nav-link' : 'nav-link';
+  }
+  return $atts;
+}
+add_filter('nav_menu_link_attributes', 'tylerphan_bootstrap_nav_classes', 10, 3);
+
+function tylerphan_bootstrap_li_classes($classes, $item, $args) {
+  if (isset($args->theme_location) && $args->theme_location === 'main-menu') {
+    $classes[] = 'nav-item';
+  }
+  return $classes;
+}
+add_filter('nav_menu_css_class', 'tylerphan_bootstrap_li_classes', 10, 3);
 ?>
