@@ -9,6 +9,8 @@ add_action('after_setup_theme', 'tylerphan_setup');
 function tylerphan_enqueue_scripts() {
   // Theme root stylesheet (WordPress default)
   wp_enqueue_style('tylerphan-style', get_stylesheet_uri());
+  // JetBrains Mono (Google Fonts) for code blocks
+  wp_enqueue_style('jetbrains-mono', 'https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&display=swap', array(), null);
   // Bootstrap CSS (load first)
   wp_enqueue_style('bootstrap', get_template_directory_uri() . '/assets/css/bootstrap.min.css', array(), '5.3.3', 'all');
   // Custom CSS (override Bootstrap when needed)

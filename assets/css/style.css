@@ -26,6 +26,7 @@ Tags: custom-theme, minimal, blank
 :root{
   --font-primary:"ABC Oracle Plus Variable Unlicensed Trial";
   --font-fallback:ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif;
+  --font-mono:"JetBrains Mono",ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
 }
 body{margin:0;font-family:var(--font-primary),var(--font-fallback);color:#111;background:#fff}
 
@@ -34,3 +35,14 @@ body{margin:0;font-family:var(--font-primary),var(--font-fallback);color:#111;ba
 .navbar-brand{font-variation-settings:"wght" 600}
 .navbar-nav .nav-link{color:#2b3d4f;font-variation-settings:"wght" 500}
 .navbar-nav .nav-link:hover{color:#0d6efd}
+
+/* Header structure like screenshot: subtle bottom border and active underline */
+.site-header{border-bottom:1px solid #e9ecef}
+.navbar-brand{text-transform:uppercase;letter-spacing:.06em;color:#3c4043}
+.navbar-nav{align-items:center}
+.navbar-nav .nav-link{position:relative;padding:.5rem 0}
+.navbar-nav .nav-link::after{content:"";position:absolute;left:50%;transform:translateX(-50%);bottom:-8px;width:44px;height:3px;border-radius:999px;background:transparent}
+.navbar-nav .current-menu-item > .nav-link::after{background:#5c6470}
+
+code, pre, kbd, samp{font-family:var(--font-mono)}
+pre{background:#f8f9fa;padding:1rem;border-radius:.5rem}
