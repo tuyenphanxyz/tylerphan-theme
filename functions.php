@@ -9,10 +9,8 @@ add_action('after_setup_theme', 'tylerphan_setup');
 function tylerphan_enqueue_scripts() {
   // Theme root stylesheet (WordPress default)
   wp_enqueue_style('tylerphan-style', get_stylesheet_uri());
-  // Inter font (Google Fonts)
-  wp_enqueue_style('inter-font', 'https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap', array(), null);
   // Bootstrap CSS (load first)
-  wp_enqueue_style('bootstrap', get_template_directory_uri() . '/assets/css/bootstrap.min.css', array('inter-font'), '5.3.3', 'all');
+  wp_enqueue_style('bootstrap', get_template_directory_uri() . '/assets/css/bootstrap.min.css', array(), '5.3.3', 'all');
   // Custom CSS (override Bootstrap when needed)
   wp_enqueue_style('tylerphan-custom', get_template_directory_uri() . '/assets/css/style.css', array('bootstrap'), '1.0', 'all');
   // Bootstrap JS bundle (includes Popper)
